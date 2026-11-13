@@ -70,7 +70,7 @@ import { request } from '@/api/client'
 type Row = Record<string, string | number | null>
 
 const ENDPOINT = '/api/resultcheck'
-const columns = ["校验编号", "目标字段", "非空检查", "类型匹配", "正则表达式", "取值范围", "重复检查", "记录数阈值"]
+const columns = ["校验编号", "目标字段", "非空检查", "类型匹配", "正则表达式", "取值范围", "重复检查", "记录数阈值", "最近异常比例", "最近失败原因"]
 const actions = ["提交校验测试", "启用规则", "废弃规则"]
 const statuses = ["草稿", "校验测试中", "已启用", "已废弃"]
 const stats = [{"label": "校验规则总数", "value": 0}, {"label": "已启用规则", "value": 0}, {"label": "校验测试中", "value": 0}]
